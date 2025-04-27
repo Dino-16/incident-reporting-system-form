@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident Reporting System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="sticky-top border-bottom">
+        <nav class="navbar px-3 bg-light">
+            <div class="container-fluid justify-content-between align-items-center flex-column flex-md-row">
+                <div class="d-flex text-center">
+                    <img src="#" alt="">
+                    <h1>Campus Incident Reporting System</h1>
+                </div>
+                <div class="d-flex gap-3 align-items-center">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link">Contacts</a>
+                    <a href="#" class="nav-link bg-secondary rounded p-2">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="border m-3 mx-5 bg-light p-3 px-5 rounded">
+        <h3 class="text-center">Form</h3>
+        <form action="#">
+            <div class="mb-3">
+                <label for="">Email</label>
+                <input type="email" class="form-control" placeholder="example@gmail.com">
+            </div>
+            <div class="mb-3">
+                <label for="">Reporters Name:</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="">Incident Type:</label>
+                <select class="form-control">
+                    <option value="">Select an option</option>
+                    <option value="">Bullying</option>
+                    <option value="">Theft</option>
+                    <option value="">Assault</option>
+                    <option value="">Injury</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="">Upload Incident Files (Video or Photo):</label>
+                <input type="file" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="">Person/s Involved:</label>
+                <textarea class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="">Incident date:</label>
+                <input type="date" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="">Incident time:</label>
+                <input type="time" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="">Additional Information (Optional):</label>
+                <textarea class="form-control"></textarea>
+            </div>
+            <div class="mb-3 text-center">
+                <button type="submit" class="btn btn-primary mx-auto">Submit</button>
+            </div>
+        </form>
+        <p class="text-center bg-warning-subtle p-3">Take note : You can't submit a report without an account in campus incident reporting system, click this link to make an account <a href="#">Register</a></p>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
